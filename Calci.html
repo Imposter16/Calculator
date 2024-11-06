@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calci.css" />
+  </head>
+  <body>
+    <main>
+      <div id="body">
+        <input type="text" id="display" readonly />
+        <br />
+        <div class="buttons">
+          <button
+            class="btn"
+            onclick="currVal=currVal+'1';document.querySelector('#display').value = currVal;"
+          >
+            1
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'2';
+          document.querySelector('#display').value=currVal;"
+          >
+            2
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'3';
+          document.querySelector('#display').value=currVal;"
+          >
+            3
+          </button>
+          <button
+            class="btn"
+            onclick="currVal='';
+          document.querySelector('#display').value=currVal;"
+          >
+            C
+          </button>
+        </div>
+        <div class="buttons">
+          <button
+            class="btn"
+            onclick="currVal=currVal+'4';
+          document.querySelector('#display').value=currVal;"
+          >
+            4
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'5';
+          document.querySelector('#display').value=currVal;"
+          >
+            5
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'6';
+          document.querySelector('#display').value=currVal;"
+          >
+            6
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'/';
+          document.querySelector('#display').value=currVal;"
+          >
+            /
+          </button>
+        </div>
+        <div class="buttons">
+          <button
+            class="btn"
+            onclick="currVal=currVal+'7';
+          document.querySelector('#display').value=currVal;"
+          >
+            7
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'8';
+          document.querySelector('#display').value=currVal;"
+          >
+            8
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'9';
+          document.querySelector('#display').value=currVal;"
+          >
+            9
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'*';
+          document.querySelector('#display').value=currVal;"
+          >
+            *
+          </button>
+        </div>
+        <div class="buttons">
+          <button
+            class="btn"
+            onclick="currVal=currVal+'.';
+          document.querySelector('#display').value=currVal;"
+          >
+            .
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'0';
+          document.querySelector('#display').value=currVal;"
+          >
+            0
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'('+')';
+          document.querySelector('#display').value=currVal;"
+          >
+            ()
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'+';
+          document.querySelector('#display').value=currVal;"
+          >
+            +
+          </button>
+        </div>
+        <div class="buttons">
+          <button
+            class="btn"
+            onclick="
+            let op=eval(currVal);
+            currVal=(result*currVal)/100;
+          document.querySelector('#display').value=currVal;"
+          >
+            %
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'00';
+          document.querySelector('#display').value=currVal;"
+          >
+            00
+          </button>
+          <button
+            class="btn"
+            onclick="
+            let result=eval(currVal);
+            currVal=result;
+          document.querySelector('#display').value=currVal;"
+          >
+            =
+          </button>
+          <button
+            class="btn"
+            onclick="currVal=currVal+'-';
+          document.querySelector('#display').value=currVal;"
+          >
+            -
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="Calci.js"></script>
+  </body>
+</html>
